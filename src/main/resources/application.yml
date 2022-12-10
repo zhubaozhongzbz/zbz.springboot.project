@@ -1,23 +1,23 @@
-person:
-  userName: zhangsan
-  boss: false
-  birth: 2019/12/12 20:12:33
-  age: 18
-  pet:
-    name: tomcat
-    weight: 23.4
-  interests: [篮球,游泳]
-  animal:
-    - jerry
-    - mario
-  score:
-    english:
-      first: 30
-      second: 40
-      third: 50
-    math: [131,140,148]
-    chinese: {first: 128,second: 136}
-  salarys: [3999,4999.98,5999.99]
+#person:
+#  userName: zhangsan
+#  boss: false
+#  birth: 2019/12/12 20:12:33
+#  age: 18
+#  pet:
+#    name: tomcat
+#    weight: 23.4
+#  interests: [篮球,游泳]
+#  animal:
+#    - jerry
+#    - mario
+#  score:
+#    english:
+#      first: 30
+#      second: 40
+#      third: 50
+#    math: [131,140,148]
+#    chinese: {first: 128,second: 136}
+#  salarys: [3999,4999.98,5999.99]
 #WebMvcProperties
 spring:
   mvc:
@@ -26,7 +26,6 @@ spring:
     # http://localhost:8080/success?format=json
     contentnegotiation:
       favor-parameter: true
-
  # web:
   #  resources:
       #classpath:后沒有空格
@@ -80,6 +79,8 @@ spring:
         pool:
           max-active: 10
           min-idle: 5
+  main:
+    banner-mode: off
 mybatis:
   config-location: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
@@ -87,6 +88,10 @@ mybatis:
     # config-location: classpath:mybatis/mybatis-config.xml
    # configuration:
     #  map-underscore-to-camel-case: true
-
-
-
+mybatis-plus:
+  global-config:
+    banner: false
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0

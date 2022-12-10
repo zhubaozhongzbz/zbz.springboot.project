@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zbz.boot.mapper.AsideMenuMapper">
+
+    <select id="getAll" resultType="com.zbz.boot.bean.asidemenu.AsideMenu">
+        select *  from  asidemenu
+    </select>
+<!--    select d.id,d.icon,d.name,d.path ,concat('[',group_concat(sname),']') child from -->
+<!--    (SELECT a.id ,a.name,a.icon,a.path ,concat('{name:',s.name,',path:',s.path,'}') -->
+<!--    sname FROM  asidemenu a ,subasidemenu s where a.id=s.menuid )as d  group by d.id-->
+
+</mapper>

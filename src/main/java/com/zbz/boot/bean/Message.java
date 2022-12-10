@@ -1,6 +1,6 @@
 package com.zbz.boot.bean;
 
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,8 +10,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Message {
-    private Integer id;
+    @TableId(value = "id",type= IdType.AUTO)
+    private Long id;
     private  String  title;
     private  String  type;
     private  String  link;
+    @TableField(exist=false)
+    private  String   age;
+
 }

@@ -1,11 +1,12 @@
 package com.zbz.boot.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.zbz.boot.bean.Message;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
-
-public interface MessageMapper {
+@Mapper
+public interface MessageMapper extends BaseMapper<Message> {
 
     public List<Message> getMessages(String type);
 
@@ -14,4 +15,6 @@ public interface MessageMapper {
     Integer updateMessages(Message message);
 
     Integer deleteMessages(Integer id);
+
+
 }

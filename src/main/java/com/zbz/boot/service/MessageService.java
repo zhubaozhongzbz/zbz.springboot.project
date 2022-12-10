@@ -1,28 +1,25 @@
 package com.zbz.boot.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.zbz.boot.bean.Message;
 import com.zbz.boot.mapper.MessageMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
-public class MessageService {
-    @Autowired
-    MessageMapper  messageMapper;
-    public List<Message> getMessages(String type){
-        return messageMapper.getMessages(type);
-    }
-    public Integer insertMessages(Message message){
-       return messageMapper.insertMessages(message);
-    }
+public interface MessageService extends IService<Message> {
+//
+//    public List<Message> getMessages(String type);
+//
+//    public Integer insertMessages(Message message);
+//
+//
+//    public Integer updateMessages(Message message) ;
+//
+//    public Integer deleteMessages(Integer id) ;
 
-    public Integer updateMessages(Message message) {
-        return messageMapper.updateMessages(message);
-    }
 
-    public Integer deleteMessages(Integer id) {
-       return  messageMapper.deleteMessages(id);
-    }
 }

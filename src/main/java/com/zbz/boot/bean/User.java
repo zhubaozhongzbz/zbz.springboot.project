@@ -10,7 +10,7 @@ import lombok.*;
 @ToString
 //@TableName("user")//指定表名称
 public class User {
-    @TableField(exist = false)
+    @TableField(exist = false)//数据库中没有的字段;
     private String userName;
     private Integer age;
     @TableField(exist = false)
