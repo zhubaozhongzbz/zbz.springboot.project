@@ -1,4 +1,4 @@
-package com.zbz.boot.bean;
+package com.zbz.boot.format.bean;
 
 import lombok.*;
 import org.springframework.boot.context.properties.ConfigurationProperties;

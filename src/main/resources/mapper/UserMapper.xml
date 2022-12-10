@@ -2,12 +2,12 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zbz.boot.mapper.UserMapper">
+<mapper namespace="com.zbz.boot.format.mapper.UserMapper">
 
-    <select id="getUser" resultType="com.zbz.boot.bean.User">
+    <select id="getUser" resultType="com.zbz.boot.format.bean.User">
         select * from user
     </select>
-    <select id="getByUserName" resultType="com.zbz.boot.bean.User">
+    <select id="getByUserName" resultType="com.zbz.boot.format.bean.User">
         select * from user where  name =#{name}
     </select>
 

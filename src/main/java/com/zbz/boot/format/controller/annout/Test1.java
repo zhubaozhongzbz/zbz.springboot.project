@@ -1,4 +1,4 @@
-package com.zbz.boot.controller.annout;
+package com.zbz.boot.format.controller.annout;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

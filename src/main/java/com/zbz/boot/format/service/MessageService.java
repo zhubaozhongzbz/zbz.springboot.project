@@ -1,13 +1,8 @@
-package com.zbz.boot.service;
+package com.zbz.boot.format.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.zbz.boot.bean.Message;
-import com.zbz.boot.mapper.MessageMapper;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.zbz.boot.format.bean.Message;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
-import java.util.Map;
 
 @Service
 public interface MessageService extends IService<Message> {

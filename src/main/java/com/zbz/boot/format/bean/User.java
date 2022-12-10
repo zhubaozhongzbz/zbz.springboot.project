@@ -1,7 +1,6 @@
-package com.zbz.boot.bean;
+package com.zbz.boot.format.bean;
 
 import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.*;
 
 @Data

@@ -1,9 +1,5 @@
-package com.zbz.boot.bean;
+package com.zbz.boot.format.bean;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;

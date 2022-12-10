@@ -1,11 +1,9 @@
 package com.zbz.boot;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.zbz.boot.bean.Message;
-import com.zbz.boot.mapper.MessageMapper;
-import com.zbz.boot.service.MessageService;
+import com.zbz.boot.format.bean.Message;
+import com.zbz.boot.format.mapper.MessageMapper;
+import com.zbz.boot.format.service.MessageService;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

@@ -1,13 +1,11 @@
-package com.zbz.boot.service.serviceImp;
+package com.zbz.boot.format.service.serviceImp;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.zbz.boot.bean.Message;
-import com.zbz.boot.mapper.MessageMapper;
-import com.zbz.boot.service.MessageService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.zbz.boot.format.bean.Message;
+import com.zbz.boot.format.mapper.MessageMapper;
+import com.zbz.boot.format.service.MessageService;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 @Service
 public class MessageServiceImp extends ServiceImpl<MessageMapper,Message> implements MessageService {
 //    @Autowired

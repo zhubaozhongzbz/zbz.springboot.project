@@ -1,4 +1,4 @@
-package com.zbz.boot.bean.asidemenu;
+package com.zbz.boot.format.bean.asidemenu;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,7 +1,7 @@
-package com.zbz.boot.controller;
+package com.zbz.boot.format.controller;
 
-import com.zbz.boot.bean.User;
-import com.zbz.boot.service.UserService;
+import com.zbz.boot.format.bean.User;
+import com.zbz.boot.format.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

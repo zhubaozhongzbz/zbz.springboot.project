@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zbz.boot.mapper.AsideMenuMapper">
+<mapper namespace="com.zbz.boot.format.mapper.AsideMenuMapper">
 
-    <select id="getAll" resultType="com.zbz.boot.bean.asidemenu.AsideMenu">
+    <select id="getAll" resultType="com.zbz.boot.format.bean.asidemenu.AsideMenu">
         select *  from  asidemenu
     </select>
 <!--    select d.id,d.icon,d.name,d.path ,concat('[',group_concat(sname),']') child from -->

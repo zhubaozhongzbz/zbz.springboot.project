@@ -1,4 +1,4 @@
-package com.zbz.boot.bean;
+package com.zbz.boot.format.bean;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.AllArgsConstructor;

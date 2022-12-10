@@ -1,6 +1,6 @@
 package com.zbz.boot.converter;
 
-import com.zbz.boot.bean.Person;
+import com.zbz.boot.format.bean.Person;
 import org.springframework.http.HttpInputMessage;
 import org.springframework.http.HttpOutputMessage;
 import org.springframework.http.MediaType;

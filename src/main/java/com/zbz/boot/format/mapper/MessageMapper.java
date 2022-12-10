@@ -1,7 +1,7 @@
-package com.zbz.boot.mapper;
+package com.zbz.boot.format.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.zbz.boot.bean.Message;
+import com.zbz.boot.format.bean.Message;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

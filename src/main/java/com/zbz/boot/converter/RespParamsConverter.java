@@ -1,6 +1,6 @@
 package com.zbz.boot.converter;
 
-import com.zbz.boot.bean.Pet;
+import com.zbz.boot.format.bean.Pet;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.util.StringUtils;
 

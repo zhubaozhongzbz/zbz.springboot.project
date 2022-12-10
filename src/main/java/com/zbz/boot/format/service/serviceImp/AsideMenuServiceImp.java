@@ -1,8 +1,8 @@
-package com.zbz.boot.service.serviceImp;
+package com.zbz.boot.format.service.serviceImp;
 
-import com.zbz.boot.bean.asidemenu.AsideMenu;
-import com.zbz.boot.mapper.AsideMenuMapper;
-import com.zbz.boot.service.AsideMenuService;
+import com.zbz.boot.format.bean.asidemenu.AsideMenu;
+import com.zbz.boot.format.mapper.AsideMenuMapper;
+import com.zbz.boot.format.service.AsideMenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.zbz.boot.mapper;
+package com.zbz.boot.format.mapper;
 
-import com.zbz.boot.bean.asidemenu.AsideMenu;
+import com.zbz.boot.format.bean.asidemenu.AsideMenu;
 
 import java.util.List;
 

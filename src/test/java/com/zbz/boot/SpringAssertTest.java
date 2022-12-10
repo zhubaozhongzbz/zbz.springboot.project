@@ -1,22 +1,19 @@
 package com.zbz.boot;
 
-import com.zbz.boot.bean.Person;
-import com.zbz.boot.bean.User;
-import com.zbz.boot.bean.asidemenu.AsideMenu;
-import com.zbz.boot.mapper.AsideMenuMapper;
-import com.zbz.boot.mapper.UserMapper;
-import com.zbz.boot.service.AsideMenuService;
-import com.zbz.boot.service.UserService;
+import com.zbz.boot.format.bean.Person;
+import com.zbz.boot.format.bean.User;
+import com.zbz.boot.format.bean.asidemenu.AsideMenu;
+import com.zbz.boot.format.mapper.AsideMenuMapper;
+import com.zbz.boot.format.mapper.UserMapper;
+import com.zbz.boot.format.service.AsideMenuService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.*;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.function.IntSupplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 

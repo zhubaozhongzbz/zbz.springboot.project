@@ -1,7 +1,7 @@
-package com.zbz.boot.service;
+package com.zbz.boot.format.service;
 
-import com.zbz.boot.bean.User;
-import com.zbz.boot.mapper.UserMapper;
+import com.zbz.boot.format.bean.User;
+import com.zbz.boot.format.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
