@@ -1,4 +1,4 @@
-package com.zbz.boot.format.service.serviceImp;
+package com.zbz.boot.format.service.impl;
 
 import com.zbz.boot.format.bean.asidemenu.AsideMenu;
 import com.zbz.boot.format.mapper.AsideMenuMapper;

@@ -1,4 +1,4 @@
-package com.zbz.boot.format.service.serviceImp;
+package com.zbz.boot.format.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zbz.boot.format.bean.Message;

@@ -81,6 +81,10 @@ spring:
           min-idle: 5
   main:
     banner-mode: off
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 500MB
 mybatis:
   config-location: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
