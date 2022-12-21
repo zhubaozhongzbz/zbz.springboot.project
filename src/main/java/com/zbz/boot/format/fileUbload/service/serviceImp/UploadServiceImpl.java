@@ -7,6 +7,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
@@ -31,8 +33,10 @@ public class UploadServiceImpl implements IUploadService {
     @Autowired
     private RedisTemplate redisTemplate;
 
-   // @Value("${uploadFolder}")
+    @Value("${uploadFolder}")
     private String uploadFolder;
+
+
 
     /**
      * 检查文件是否存在，如果存在则跳过该文件的上传，如果不存在，返回需要上传的分片集合

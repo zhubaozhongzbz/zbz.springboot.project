@@ -24,19 +24,19 @@ public class Generater {
         globalConfig.setOpen(false);    //设置生成完毕后是否打开生成代码所在的目录
         globalConfig.setAuthor("zbz");    //设置作者
         globalConfig.setFileOverride(true);     //设置是否覆盖原始生成的文件
-        globalConfig.setMapperName("%sDao");    //设置数据层接口名，%s为占位符，指代模块名称
+        globalConfig.setMapperName("%sMapper");    //设置数据层接口名，%s为占位符，指代模块名称
         globalConfig.setIdType(IdType.ASSIGN_ID);   //设置Id生成策略
         autoGenerator.setGlobalConfig(globalConfig);
         //设置包名相关配置
         PackageConfig packageInfo = new PackageConfig();
-        packageInfo.setParent("com.zbz.boot");   //设置生成的包名，与代码所在位置不冲突，二者叠加组成完整路径
-        packageInfo.setEntity("domain");    //设置实体类包名
-        packageInfo.setMapper("dao");   //设置数据层包名
+        packageInfo.setParent("com.zbz.boot.format");   //设置生成的包名，与代码所在位置不冲突，二者叠加组成完整路径
+        packageInfo.setEntity("bean");    //设置实体类包名
+        packageInfo.setMapper("mapper");   //设置数据层包名
         autoGenerator.setPackageInfo(packageInfo);
         //策略设置
         StrategyConfig strategyConfig = new StrategyConfig();
-        strategyConfig.setInclude("message");  //设置当前参与生成的表名，参数为可变参数，不设置的话就是全部表
-        //strategyConfig.setTablePrefix("tbl_");  //设置数据库表的前缀名称，模块名 = 数据库表名 - 前缀名  例如： User = tbl_user - tbl_
+        strategyConfig.setInclude("tb_myuser");  //设置当前参与生成的表名，参数为可变参数，不设置的话就是全部表
+        strategyConfig.setTablePrefix("tb_");  //设置数据库表的前缀名称，模块名 = 数据库表名 - 前缀名  例如： User = tbl_user - tbl_
         strategyConfig.setNaming(NamingStrategy.underline_to_camel); // 数据库表字段映射到实体的命名策略
        // strategyConfig.setRestControllerStyle(true);    //设置是否启用Rest风格
         strategyConfig.setVersionFieldName("version");  //设置乐观锁字段名
